@@ -32,7 +32,7 @@ export default function EpisodeList() {
         {episodes.map((show) => <EpisodeCard
         
         name = {show.name}
-       
+        url = {show.url}
         episode = {show.episode}
         />)}
       </h2>

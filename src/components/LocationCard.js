@@ -1,7 +1,7 @@
 import React from 'react'
 //import { Card, Icon, Image } from 'semantic-ui-react'
 import { Card, Icon, Image } from 'semantic-ui-react'
-
+import { Link } from 'react-router-dom'
 
 export default function LocationCard ({name, type, dimension, residence}) {
  
@@ -9,17 +9,17 @@ export default function LocationCard ({name, type, dimension, residence}) {
           <Card>
         <Image wrapped ui={false} />
         <Card.Content>
-          <Card.Header>{name}</Card.Header>
-          <Card.Meta>{type}</Card.Meta>
+          <Card.Header>Location: {name}</Card.Header>
+          <Card.Meta>Type: {type}</Card.Meta>
           <Card.Description>
-          {dimension}
+          Dimension: {dimension}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <a>
+          <Link>
             <Icon name='user' />
               {residence}
-          </a>
+          </Link>
         </Card.Content>
       </Card>
   </span>
