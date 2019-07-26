@@ -12,7 +12,7 @@ export default function LocationCard (key, props) {
           <Card.Header>{key.name}</Card.Header>
           <Card.Meta>{key.type}</Card.Meta>
           <Card.Description>
-          {key.dimension}
+          {key.type}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>

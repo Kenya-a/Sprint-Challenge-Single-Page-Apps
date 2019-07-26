@@ -34,7 +34,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 > Answer: Controlled components are input form elements whose values are controlled by React.
 
 - [ ] Name three tools/libraries for making AJAX requests.
-> Answer: ***
+> Answer: Fetching API, Axios call, and jQuery
 
 
 ## Project Set Up
