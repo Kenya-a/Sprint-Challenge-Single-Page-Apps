@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 export default function CharacterCard (key, props) {
@@ -22,7 +21,7 @@ export default function CharacterCard (key, props) {
         <Card.Content extra>
           <a>
             <Icon name='user' />
-            {key.episode}
+            Episode
           </a>
         </Card.Content>
       </Card>

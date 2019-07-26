@@ -38,3 +38,9 @@ header h1 {
   text-align: center;
 
 }
+
+h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
