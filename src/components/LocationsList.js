@@ -13,7 +13,7 @@ export default function LocationsList() {
 
             .then(response => {
                 console.log('Locations:', response.data.results)
-                const destination = response.destination.results
+                const destination = response.data.results
                 setLocation(destination)
             })
 
@@ -22,15 +22,18 @@ export default function LocationsList() {
             })
 
         }
+
         getLocations();
-        
+
     }, []);
 
     return (
 
         <div>
-        {/* {locations.map(() => <LocationCard
-        name = {destination.name}/>)} */}
+
+        {locations.map((destination) => <LocationCard
+        name = {destination.name}/>)}
+
         </div>
         
         )

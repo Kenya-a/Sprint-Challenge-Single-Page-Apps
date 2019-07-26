@@ -19,10 +19,10 @@ export default function CharacterCard (key, props) {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <a>
+          <p>
             <Icon name='user' />
             Episode
-          </a>
+          </p>
         </Card.Content>
       </Card>
       </span>
