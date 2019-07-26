@@ -32,7 +32,14 @@ export default function LocationsList() {
         <div>
 
         {locations.map((destination) => <LocationCard
-        name = {destination.name}/>)}
+        name = {destination.name}
+        type = {destination.type}
+        dimension = {destination.dimension}
+        residence = {destination.residence}
+        
+        
+        />)
+        }
 
         </div>
         

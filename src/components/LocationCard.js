@@ -1,24 +1,24 @@
 import React from 'react'
+//import { Card, Icon, Image } from 'semantic-ui-react'
 import { Card, Icon, Image } from 'semantic-ui-react'
-// import { Card, Icon, Image } from 'semantic-ui-react'
 
 
-export default function LocationCard (key, props) {
-  // image={image}
+export default function LocationCard ({name, type, dimension, residence}) {
+ 
   return (<span classname = 'locationspan'>
           <Card>
-        <Image src={key.image} wrapped ui={false} />
+        <Image wrapped ui={false} />
         <Card.Content>
-          <Card.Header>{key.name}</Card.Header>
-          <Card.Meta>{key.type}</Card.Meta>
+          <Card.Header>{name}</Card.Header>
+          <Card.Meta>{type}</Card.Meta>
           <Card.Description>
-          {key.type}
+          {dimension}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
           <a>
             <Icon name='user' />
-              {key.residence}
+              {residence}
           </a>
         </Card.Content>
       </Card>
