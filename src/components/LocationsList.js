@@ -35,7 +35,7 @@ export default function LocationsList() {
         name = {destination.name}
         type = {destination.type}
         dimension = {destination.dimension}
-        residence = {destination.residence}
+        residents = {destination.residents}
         
         
         />)
